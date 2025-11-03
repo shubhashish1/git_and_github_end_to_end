@@ -112,3 +112,5 @@ BRANCH MERGING WITH CONFLICTS:
 4. We can then open the resolve in merge editor window option.
 5. Once we make the changes we can click on complete merge with merge message.
 6. This thing is easy with one file. But with multiple files things are difficult.
+7. The process will be same and we will be getting multiple editors to edit and fix 
+   all our merge conflicts in individual files.
