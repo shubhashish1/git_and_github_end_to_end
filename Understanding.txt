@@ -1,0 +1,56 @@
+Documentation link chai code: https://docs.chaicode.com/youtube/chai-aur-git/introduction/
+
+1. Git is a version control software and github is the host or container of the git.
+2. So git is a software and github is the service used to host git online.
+3. If our software is working good in one set up and condition, then we can set a checkpoint using git in the
+   software to guide us back to the same checkpoint if anything is not working with modifications.
+4. In git we have version control system which tracks our files and also it sets checkpoints in code for us.
+
+Git and Github are different:
+
+Git is a version control system that is used to track changes to your files. It is a free and open-source 
+software that is available for Windows, macOS, and Linux. Remember, GIT is a software and can be installed on 
+your computer.
+
+Github is a web-based hosting service for Git repositories. Github is an online platform that allows you to store
+and share your code with others. It is a popular platform for developers to collaborate on projects and to share
+code. It is not that Github is the only provider of Git repositories, but it is one of the most popular ones.
+
+5. There are other version control softwares like git which are svn, cvs, perforce, mercury etc.
+
+GIT TERMINOLOGIES:
+
+1. To check the version of git we have the command git --version
+2. In git the folders are called as repositories.
+3. So the git folder or repositories start with a name .git
+4. TO check the git folders present we can have the command git status
+5. Git also saves our info in the tracking so that whenever we do something then it can track who did
+   the changes and also it is easy to track in online i.e in github.
+6. Let's set ourselfs up in git by using this command: git cofig --global user.email "your-email-id"
+7. Here global is used to set up this for all repositories.  But we can also customize it by using our
+   different config instead of global.
+8. To check our existing configs we can use command: git config --list
+9. We can have our username or any name set in git for tracking using command: git config --global user.name "name"
+10. Now to create our first git repo we will use command git init. 
+11. But before using git init we need to do git status to check whether we have any git repo before or not.
+12. If we have then we don't need to create a new repo as there can be a chance that it can erase the previous 
+    git repo mappings.
+13. Now mostly the .git folder is hidden. TO check the hidden folder in cmd we can use git bash and command is:
+    ls -la
+14. We can go inside the .git floder and check the file and folders inside it.
+15. Now git has basic highlevel structure as write -> add -> commit
+16. In write we write our codes. 
+17. Then we add our codes to push to the github service area where we can save our repo online.
+18. The command is git add (filename) or (.) for all filenames
+19. Once we do this all our changes or codes are staged or we can say then come to the stage in our play
+    and ready to do the performance. Hence it is called staging area.
+20. Now we do git commit with a message or checkpoint identifier by command
+    git commit -m "commit message".
+21. This will add checkpoint on the files or changes added in the git add.
+22. We can call it as a group of ppl came on to stage for dancing but we have asked a set of ppl only to dance
+    first. Let's say in DID we have 4 groups on the stage and we have asked the group 1 to dance.
+    So group1 will have a performance and they can call it with a name say may be Shiv tandav. So the performance
+    of group1 they are doing now is saved with a checkpoint Shiv tandav.
+23. Now we use git push -u origin branch name and push that change or performance into our branch with the checkpoint given.
+    Here we can call the branch as episode of the show. We sabe it into the github.
+24. We can use git status basically after every command to check what happened due to the command and where are we now.
