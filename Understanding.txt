@@ -109,3 +109,6 @@ BRANCH MERGING WITH CONFLICTS:
 2. For example we have one file that is common in both the branches and we are making
    changes to that file in both the branches and committed. 
 3. Now once we are done and we want to merge both the branches then conflict occurs.
+4. We can then open the resolve in merge editor window option.
+5. Once we make the changes we can click on complete merge with merge message.
+6. This thing is easy with one file. But with multiple files things are difficult.
