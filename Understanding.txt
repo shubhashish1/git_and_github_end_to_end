@@ -99,3 +99,13 @@ BRANCH MERGING:
 1. There could be a scenario when we have some work going on in the master branch and
    symultaneously some work is going on in the bug-fix branch. So then at one point we
    have to merge them. This is a tricky scenario.
+2. Here while merging we will have conflicts.
+3. So here we will merge with a message:  git merge bug-fix -m "Merge to master"
+
+
+BRANCH MERGING WITH CONFLICTS:
+
+1. Now we can check how to merge 2 branches where we have conflicts.
+2. For example we have one file that is common in both the branches and we are making
+   changes to that file in both the branches and committed. 
+3. Now once we are done and we want to merge both the branches then conflict occurs.
