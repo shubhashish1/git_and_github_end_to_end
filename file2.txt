@@ -1,1 +1,4 @@
 This is file2 of git
+
+
+Adding new details for conflicts.
