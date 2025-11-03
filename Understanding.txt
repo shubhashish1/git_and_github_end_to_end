@@ -59,3 +59,43 @@ GIT TERMINOLOGIES:
 27. To check what are the commits we can use command git log.
 28. But git log gives a long detailed info which might be confusing sometimes, hence we will use
     some extra in git log command as --oneline. So command will be git log --oneline
+29. Git by default don't track any empty folders. But if we have an empty folder which will have data
+    or info later on and we want it to be tracked then we keep a file named .gitkeep inside that folder
+    so that git will track that empty folder.
+30. If we want some file or folder to not to be tracked we can put them under .gitignore
+
+
+BRANCHING:
+
+1. Git has a head entity which points to the current branch.
+2. To know which branch we are in we can check with a command: git branch
+3. To create a new branch we can use command: git branch <branch name>
+4. Once we create a new branch we can check in .git head fiolder that there is a new object with new branch name.
+5. Now with the previous command we can create a new branch, but we are still in our previous branch.
+6. To change or switch branch we can have command: git swith <branch name>
+7. Now let's add a file named fixes.txt in the new branch bug-fix and then commit that file.
+8. Now let's switch the branch back to master.
+9. Once we switch back to master interestingly the new file fixes.txt we have created in the bug-fix 
+   branch is gone. Becz we are in different branch. Just like 2 different timeline we saw in Loki movie.
+   Hence we don't see the files of other branch(es) in our churrent branch and will only see the files belong
+   to current branch.
+10. Now there is a direct option to not only create a new branch but also to switch to that branch.
+    The command is: git switch -c <branch name>
+11. Here it checks if the branch exists then it will switch us to the branch else it will create the new branch
+    and switch.
+12. If we have an already existing branch and we just want to move tho that branch then we can use the command:
+     git checkout <branch name>.
+13. But this command will not work if the branch name given is not present.
+14. Now we can see the graph of our git by installing extension git graph.
+15. Now if we want to merge two branches, then we will go to the branch to which we want to 
+    merge another branch. For example let's say we want to merge our changes of bug-fix branch
+    to master branch. So we will come to master branc where we need to get or accept the changes.
+    Then we will put command: git merge bug-fix
+    This will merge all the files of bug-fix to master branch
+
+
+BRANCH MERGING:
+
+1. There could be a scenario when we have some work going on in the master branch and
+   symultaneously some work is going on in the bug-fix branch. So then at one point we
+   have to merge them. This is a tricky scenario.
