@@ -54,3 +54,8 @@ GIT TERMINOLOGIES:
 23. Now we use git push -u origin branch name and push that change or performance into our branch with the checkpoint given.
     Here we can call the branch as episode of the show. We sabe it into the github.
 24. We can use git status basically after every command to check what happened due to the command and where are we now.
+25. we can use use "git rm --cached <file>..." to unstage any file.
+26. In git once we commit, we can have multiple commits to be pushed at a time.
+27. To check what are the commits we can use command git log.
+28. But git log gives a long detailed info which might be confusing sometimes, hence we will use
+    some extra in git log command as --oneline. So command will be git log --oneline
