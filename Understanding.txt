@@ -114,3 +114,41 @@ BRANCH MERGING WITH CONFLICTS:
 6. This thing is easy with one file. But with multiple files things are difficult.
 7. The process will be same and we will be getting multiple editors to edit and fix 
    all our merge conflicts in individual files.
+
+DIFF , STASH:
+
+1. GIT diff is an informatory command which provides us difference between 2 commits.
+2. But only the "git diff" command isn't going to do anything, we need to specify what
+   we want. For example if we want the difference between staging area like if there is 
+   any file in staging to be committed, command will be: git diff --staged
+
+3. STASH is a temporary location to store our files for now. If we have done some changes in
+   master branch and then we have just added or staged those changes. Now if we want to switch
+   to other branch then we are not allowed becz git will ask us first either commit or STASH
+   the staged changes before moving as the changes made may get deleted or lost.
+   So here we can store the changes done in master branch which are staged in STASH and then
+   swithc the branch and once we come back we can take them and work on them.
+4. We can have a message in stash as per our choice with command: git stash saved "message".
+5. We can see all the stash we have with command: git stash list
+6. If we want to bring back our stash we can use command: git stash apply
+7. This will bring in the recent or the top stash into our branch.
+8. If we want to have a particular stash instead of the top one, we can do that with the 
+   command: git stash apply stash@{0}. Here 0 is the no., we can choose the no from
+   the git stash list.
+
+9. If we want to apply the stash in our branch and also we want to drop the stash which is 
+   there after applying to the branch then the command is: git stash pop
+10. To drop a stash we can use command: git stash drop
+11. If we have a stash in master branch but we want to apply it in the bug-fix branch
+    we can do so by command: git stash apply stash@{0} <branch-name>
+12. If we want to clear stash then we can use command: git stash clear
+    This will remove all the stash list, so be careful.
+
+GIT TAG:
+
+1. Let's say we have 2-3 commits which are part of first release, then we can use tag to 
+   tag those commits as part of the release.
+2. git tag <tag name> command is used.
+3. We can also provide a message with the tag using command: git tag -a <tag name> -m "Release 1.0"
+4. We can check the list of tags using command: git tag
+5. We can tag a specific commit to a tag name using command: git tag <tag-name> <commit-hash>
