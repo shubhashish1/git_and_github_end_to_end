@@ -152,3 +152,20 @@ GIT TAG:
 3. We can also provide a message with the tag using command: git tag -a <tag name> -m "Release 1.0"
 4. We can check the list of tags using command: git tag
 5. We can tag a specific commit to a tag name using command: git tag <tag-name> <commit-hash>
+
+GIT REFLOG:
+
+1. TO check the entire history of the commits done in different branches we can use it.
+2. It shows a detailed log with command: git reflog.
+3. Reflog also shows all the commit ids and commit hash using command: git reflog
+4. We can use git log --oneline to get a small history with only commit hash and messages.
+3. If we want to see the history or details of a specific commit we can use command:
+   git reflog <commit-hash>
+4. We can also recover the lost commits or say we have done some mistakes in the current 
+   commit and we want to go to a stable commit then we can use the commad:
+   git reset --hard HEAD@{1}.
+   This will move us to 1 commit or 2 commit back based on the HEAD@{no.} specified.
+5. If we want to go back to a specific commit till which we had the code stable and running
+   fine then we can use command: git reset --hard <commit-hash>
+   But be careful as it is a hard commit and once done is difficult to go back To
+   the old one we were.
